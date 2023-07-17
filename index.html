@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>News App</title>
+</head>
+<body>   
+    <nav>
+        <div class="main-nav container flex">
+            <a href="#" class="company-logo"><img src="./Assets/pngegg.png" alt="Company logo"></a>
+            <div class="nav-links">
+                <ul class="flex">
+                    <li class="hover-link nav-item" id="ipl" onclick="onNavItemClick('ipl')">IPL</li>
+                    <li class="hover-link nav-item" id="finance" onclick="onNavItemClick('finance')">Finance</li>
+                    <li id="politics" class="hover-link nav-item" onclick="onNavItemClick('politics')">Politics</li>
+                </ul>
+            </div>
+            <div class="search-bar flex">
+                <input type="text" name="" class="news-input" placeholder="e.g. Science" id="search-txt">
+                <button class="search-button" id="search-button">Search</button>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <div class="cards-container container flex" id="cards-container">
+            
+                
+        </div>
+
+
+    </main>
+    <template id="template-news-card">
+        <div class="card">
+            <div class="card-header">
+                <img src="https://via.placeholder.com/400x200" id="news-img" alt="News Image">
+
+            </div>
+            <div class="card-content">
+                <h3 id="news-title">This is Title</h3>
+                <h6 id="news-source" class="news-source">End Gadget 26/08/2023</h6>
+                <p class="news-desc" id="news-desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora ex deserunt ipsam earum alias harum voluptate consequatur, corporis exercitationem quis.</p>
+            </div>
+        </div>
+    </template>
+
+    <script src="./script.js"></script>
+</body>
+</html>
